@@ -1,0 +1,13 @@
+CREATE DATABASE Edriano;
+USE 			Edriano;
+
+-- AUTO_INCREMENT
+
+CREATE TABLE Cliente (
+	ClienteId   INT PRIMARY KEY NOT NULL,
+    ClienteNome VARCHAR(50),
+    ClienteCPF  VARCHAR(20)
+);
+
+ALTER TABLE Cliente ADD  COLUMN ClienteTelefone VARCHAR(20);
+ALTER TABLE Cliente DROP COLUMN ClienteCPF;
